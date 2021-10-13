@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map API </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Google Map API </h1>
+
+    <div>
+        <Form id="forms">
+            <label for="">From
+                <input type="text" name="fromlat" id="fromlan" placeholder="Enter Latitude">
+                <input type="text" name="fromlng" id="fromlng" placeholder="Enter Longitude">
+
+            </label>
+
+            <label for="">To
+                <input type="text" name="tolat" id="tolan" placeholder="Enter Latitude">
+                <input type="text" name="tolng" id="tolng" placeholder="Enter Longitude"> </label>
+            <input type="submit" value="Search">
+        </Form>
+        <br>
+        <button id="currentLocation">Current Location</button>
+
+        <br>
+        <br>
+        <button id="direction">Get Direction</button>
+
+        <br>
+        <br>
+    </div>
+    <div id="map"></div>
+    <div>
+        <ul id="tripDetails">
+        </ul>
+
+    </div>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6b7TAwLyvm61gICrlxK-lKGlmexpWrPA&callback=initMap">
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
